@@ -10631,6 +10631,11 @@ ul.linklist__section-links::-webkit-scrollbar {
      margin-right: 0;
      float: right;
    }
+   .template-page-return [data-section-type="contact-section"] form textarea{
+     text-indent: 0;
+     padding: 10px;
+     line-height: 30px;
+   }
    .template-page-return [data-section-type="contact-section"] form #contactFormWrapper .contact__form--inner-wrapper{
      width: 100%;
      padding-left: 5px;
