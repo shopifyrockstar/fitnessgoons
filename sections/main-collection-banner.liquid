@@ -1,0 +1,65 @@
+{%- liquid
+
+  assign basic_banner = false
+  assign collection_banner = false
+
+  assign basic_banner_img = collection.handle | append: '.jpg'
+
+  if images[basic_banner_img] != blank and collection.description contains '[banner]'
+    assign basic_banner = true
+  elsif section.settings.show_collection_image and collection.image != blank
+    assign collection_banner = true
+  endif
+
+-%}
+
+  <section class="collection__section--banner collection__banner-{{ section.id }} parallax lazyload lazyload-fade gridlock-fluid"
+  data-section-type="parallax-section"
+  data-scale="1.3"
+  data-aos="fade"
+  data-section-id="{{ section.id }}">
+    <div class="row">
+      {%- if basic_banner or collection_banner -%}
+      <div class="parallax__container">
+        <div class="collection__banner-image parralax__image">
+          {%- if basic_banner -%}
+            {% assign img_url = basic_banner_img | file_img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
+            <img class="lazyload lazyload-fade"
+              data-src="{{ img_url }}"
+              data-sizes="auto"
+              alt="{{ collection.title | escape }}">
+          {%- elsif collection_banner and collection.image != blank -%}
+            {% render 'basic-responsive-image', type:  collection.image %}
+          {% endif %}
+        </div>
+      </div>
+      {%- endif -%}
+      <div class="grid__wrapper hero__title{% if basic_banner or collection_banner %} has_banner{% endif %}">
+        <div class="span-12 auto">
+          <h1 class="collection__page-title"
+            aria-label="{{ collection.title | escape }}">
+            {{ collection.title | escape }}
+          </h1>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="clear"></div>
+
+{% schema %}
+{
+  "name": "Collection header",
+  "settings": [
+    {
+      "type": "paragraph",
+      "content": "Show a large collection image. Want to use a different image? follow this [guide](https:\/\/www.weareunderground.com\/blogs\/theme-support\/add-a-custom-banner-image-to-each-collection-page)."
+    },
+    {
+      "type": "checkbox",
+      "id": "show_collection_image",
+      "label": "Show collection image",
+      "default": false
+    }
+  ]
+}
+{% endschema %}

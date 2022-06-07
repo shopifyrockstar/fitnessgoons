@@ -1,0 +1,30 @@
+{
+  "sections": {
+    "banner": {
+      "type": "banner-image",
+      "settings": {
+      }
+    },
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+      }
+    },
+    "grid": {
+      "type": "main-list-collections-all",
+      "settings": {
+        "text": "<p>Add some descriptive text to your all collections page.<\/p>",
+        "grid": 3,
+        "rows": 4,
+        "collection_count": true,
+        "title_position": "below_image",
+        "image_ratio": "square"
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "breadcrumbs",
+    "grid"
+  ]
+}

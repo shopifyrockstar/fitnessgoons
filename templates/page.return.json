@@ -1,0 +1,70 @@
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+      }
+    },
+    "16545308030eeaa5e3": {
+      "type": "accordion",
+      "blocks": {
+        "165453080393df996f-0": {
+          "type": "accordion_pane",
+          "settings": {
+            "title": "How many days do I have to return?",
+            "content": "<p>Our standard return policy is 14 days.  We are always interested in serving our clients, if you have an issue please contact us by filling out the form below.<\/p>"
+          }
+        },
+        "165453080393df996f-1": {
+          "type": "accordion_pane",
+          "settings": {
+            "title": "What do I need to do a return",
+            "content": "<p>The product must be in a new or unused condition with as much of the original packaging as you have.<\/p><p><\/p><p>Once the return has been approved we will provide you a label for shipping.<\/p><p><\/p><p><\/p>"
+          }
+        },
+        "165453080393df996f-2": {
+          "type": "accordion_pane",
+          "settings": {
+            "title": "Our Guarentee",
+            "content": "<p>We will refund the cost of the merchandise and shipping charges if the return is a result of our error or defective product.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "165453080393df996f-0",
+        "165453080393df996f-1",
+        "165453080393df996f-2"
+      ],
+      "settings": {
+        "title": "Return FAQ",
+        "max_width": 100,
+        "allow_multiple": false
+      }
+    },
+    "1654580945758cf0ef": {
+      "type": "return-contact",
+      "blocks": {
+        "2eacf4fe-07de-4816-b8bf-8faaad97226d": {
+          "type": "text_input",
+          "settings": {
+            "label": "Order Number",
+            "required": true
+          }
+        }
+      },
+      "block_order": [
+        "2eacf4fe-07de-4816-b8bf-8faaad97226d"
+      ],
+      "settings": {
+        "title": "Complete Form to Submit a Return Request",
+        "width": 100,
+        "section_padding": "both"
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "16545308030eeaa5e3",
+    "1654580945758cf0ef"
+  ]
+}

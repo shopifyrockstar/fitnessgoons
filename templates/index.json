@@ -1,0 +1,250 @@
+{
+  "sections": {
+    "1652394430b89f12db": {
+      "type": "slideshow-with-product",
+      "blocks": {
+        "16523944291c83d0d0-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/sliderchange2c.jpg",
+            "caption_position": "middle_center",
+            "mobile_image": "shopify:\/\/shop_images\/mobile_1_redo2.jpg",
+            "caption_below": false,
+            "heading": "",
+            "subheading": "",
+            "link": "",
+            "button_text": "Add a button",
+            "second_link": "",
+            "second_button_text": "Button 2 text",
+            "text_color": "#000000",
+            "button_color": "#ffffff",
+            "button_background": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "16523944291c83d0d0-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/slider2_w_logo.jpg",
+            "caption_position": "middle_center",
+            "mobile_image": "shopify:\/\/shop_images\/slider2mobile_w_logo.jpg",
+            "caption_below": false,
+            "heading": "",
+            "subheading": "",
+            "link": "",
+            "button_text": "Add a button",
+            "second_link": "",
+            "second_button_text": "Button 2 text",
+            "text_color": "#000000",
+            "button_color": "#ffffff",
+            "button_background": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "f47eb020-9c9a-40dd-a1a9-2a3977b26935": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/slider3_w_logo.jpg",
+            "caption_position": "middle_center",
+            "mobile_image": "shopify:\/\/shop_images\/slider3_mobile_w_logo.jpg",
+            "caption_below": false,
+            "heading": "",
+            "subheading": "",
+            "link": "",
+            "button_text": "Add a button",
+            "second_link": "",
+            "second_button_text": "Button 2 text",
+            "text_color": "#000000",
+            "button_color": "#ffffff",
+            "button_background": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "16523944291c83d0d0-0",
+        "16523944291c83d0d0-1",
+        "f47eb020-9c9a-40dd-a1a9-2a3977b26935"
+      ],
+      "settings": {
+        "display_wide": true,
+        "section_padding": "both",
+        "enable_autoplay": false,
+        "slider_speed": 5,
+        "pager": "dots",
+        "slide_heading_size": 24,
+        "subheading_size": 14,
+        "show_collection": true,
+        "heading": "Featured collection",
+        "collection": "goon-favorites",
+        "grid": 4,
+        "limit": 12
+      }
+    },
+    "featured-collection": {
+      "type": "featured-collection",
+      "settings": {
+        "heading": "Women's Apparel",
+        "collection": "general-women",
+        "carousel": true,
+        "show_view_all": true,
+        "reduce_width": false,
+        "grid": 4,
+        "limit": 18,
+        "section_padding": "both"
+      }
+    },
+    "1626728229c657e705": {
+      "type": "featured-collection",
+      "settings": {
+        "heading": "Mens Apparel",
+        "collection": "mensapparel",
+        "carousel": true,
+        "show_view_all": true,
+        "reduce_width": false,
+        "grid": 4,
+        "limit": 12,
+        "section_padding": "both"
+      }
+    },
+    "1626727788d94cc42e": {
+      "type": "text-banner",
+      "disabled": true,
+      "blocks": {
+        "1626727788d94cc42e-0": {
+          "type": "text",
+          "settings": {
+            "heading": "Lifting",
+            "textarea": "<p>Add more umpf to your workout<\/p>"
+          }
+        },
+        "1626727788d94cc42e-1": {
+          "type": "text",
+          "settings": {
+            "heading": "Popular",
+            "textarea": "<p>See The Latest Trends In Lifting Gear<\/p>"
+          }
+        },
+        "1626727788d94cc42e-2": {
+          "type": "text",
+          "settings": {
+            "heading": "Accessories",
+            "textarea": "<p>Wouldn't it be nice to have ...<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1626727788d94cc42e-0",
+        "1626727788d94cc42e-1",
+        "1626727788d94cc42e-2"
+      ],
+      "settings": {
+        "notification_heading_size": 23,
+        "notification_font_size": 14,
+        "vertical_spacing": 30,
+        "spacing": 20,
+        "background": "#444444",
+        "text_color": "#ffffff",
+        "add_divider": true,
+        "section_padding": "bottom"
+      }
+    },
+    "image-gallery": {
+      "type": "image-gallery",
+      "blocks": {
+        "335d5c34-3ab9-45ce-918b-47288dbef5ee": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/images.jpg",
+            "image_width": "33%",
+            "link": "shopify:\/\/collections\/lifting-accessories",
+            "heading_text": "Lifting Accessories",
+            "subheading": "",
+            "button_text": "Shop Now",
+            "caption_position": "middle_center",
+            "hover_caption": false,
+            "caption_background": "rgba(0,0,0,0)",
+            "text_color": "#000000",
+            "overlay_color": "#fafafa",
+            "overlay_opacity": 75
+          }
+        },
+        "a7dbca9b-0905-4449-9f2e-a167368e3828": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/gggggg_35204d8f-cffb-48c1-8bfa-187711c00c9f.jpg",
+            "image_width": "33%",
+            "link": "shopify:\/\/collections\/accessories",
+            "heading_text": "Accessories",
+            "subheading": "",
+            "button_text": "Shop Now",
+            "caption_position": "middle_center",
+            "hover_caption": false,
+            "caption_background": "rgba(0,0,0,0)",
+            "text_color": "#000000",
+            "overlay_color": "#cccccc",
+            "overlay_opacity": 75
+          }
+        },
+        "453f2c03-32be-493e-a961-2dd9317d5761": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/bbbbb.jpg",
+            "image_width": "33%",
+            "link": "shopify:\/\/collections\/nutrition-accessories",
+            "heading_text": "Nutrition Accessories",
+            "subheading": "",
+            "button_text": "Shop Now",
+            "caption_position": "middle_center",
+            "hover_caption": false,
+            "caption_background": "rgba(0,0,0,0)",
+            "text_color": "#000000",
+            "overlay_color": "#e5e5e5",
+            "overlay_opacity": 75
+          }
+        }
+      },
+      "block_order": [
+        "335d5c34-3ab9-45ce-918b-47288dbef5ee",
+        "a7dbca9b-0905-4449-9f2e-a167368e3828",
+        "453f2c03-32be-493e-a961-2dd9317d5761"
+      ],
+      "settings": {
+        "full_width": false,
+        "section_padding": "both",
+        "swipe": false,
+        "images_touching": false,
+        "promo_size": 26,
+        "hidden_size": 18
+      }
+    },
+    "16267282748dfbd59a": {
+      "type": "image-with-text",
+      "settings": {
+        "full_width": false,
+        "section_padding": "both",
+        "image": "shopify:\/\/shop_images\/todd-kent-8EexLsq4adk-unsplash.jpg",
+        "layout": "left",
+        "image_width": "50%",
+        "text_align": "left",
+        "heading": "Shop Our Whole Store",
+        "text": "<p>All products ready to browse &gt;&gt;&gt;<\/p>",
+        "button": "Shop Now",
+        "link": "shopify:\/\/collections",
+        "background": "#ffffff",
+        "color": "#000000"
+      }
+    }
+  },
+  "order": [
+    "1652394430b89f12db",
+    "featured-collection",
+    "1626728229c657e705",
+    "1626727788d94cc42e",
+    "image-gallery",
+    "16267282748dfbd59a"
+  ]
+}

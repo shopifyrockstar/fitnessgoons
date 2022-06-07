@@ -1,0 +1,59 @@
+<div data-section-type="contact-section">
+{% form 'contact' %}
+
+  {% if form.posted_successfully? %}
+    <div class="successForm feedback note-success">
+      <p>{{ 'contact.form.post_success' | t }}</p>
+    </div>
+  {% endif %}
+
+  {% if form.errors %}
+    <div class="notice note-error">
+      <p>{{ 'general.forms.post_error' | t }}</p>
+      <ul class="disc">
+        {% for field in form.errors %}
+          {% if field == 'form' %}
+            <li>
+              {{ form.errors.messages[field] }}
+            </li>
+          {% else %}
+            <li>
+              <strong>{{ field | replace: 'body', 'Message' }}</strong> {{ form.errors.messages[field] }}
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+  {% endif %}
+
+  <div id="contactFormWrapper">
+    <div class="contact__form--input">
+      <input type="text" id="contactFormName" name="contact[name]" aria-label="{{ 'contact.form.name' | t }}" />
+      <label for="contactFormName">{{ 'contact.form.name' | t }}</label>
+    </div>
+
+    <div class="contact__form--input">
+      <input type="email" id="contactFormEmail" name="contact[email]" aria-label="{{ 'contact.form.email' | t }}" />
+      <label for="contactFormEmail">{{ 'contact.form.email' | t }}</label>
+    </div>
+
+    <div class="contact__form--input">
+      <input type="text" id="contactFormTelephone" name="contact[phone]" aria-label="{{ 'contact.form.phone' | t }}" />
+      <label for="contactFormTelephone">{{ 'contact.form.phone' | t }}</label>
+    </div>
+
+    <input type="hidden" name="contact[product]" value="{{product.title}}">
+    <input type="hidden" name="contact[producturl]" value="{{ routes.root_url }}/{{product.url}}">
+
+    <div class="contact__form--input">
+      <textarea rows="15" cols="90" id="contactFormMessage" name="contact[body]" aria-label="{{ 'contact.form.message' | t }}"></textarea>
+      <label for="contactFormMessage">{{ 'contact.form.message' | t }}</label>
+    </div>
+
+    <div class="contact__form--input">
+      <input type="submit" id="contactFormSubmit" class="secondary button" value="{{ 'contact.form.send' | t }}" />
+    </div>
+  </div><!-- contactWrapper -->
+
+{% endform %}
+</div>

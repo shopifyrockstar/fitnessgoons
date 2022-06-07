@@ -1,0 +1,67 @@
+{
+  "sections": {
+    "banner": {
+      "type": "banner-image",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "page_alignment": "a-left"
+      }
+    },
+    "1652762458fa9c1e33": {
+      "type": "image-with-text-overlay",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/fam.jpg",
+        "background_effect": "parallax",
+        "scale": 0,
+        "page_height": 800,
+        "caption_position": "middle_center",
+        "caption_below": false,
+        "heading": "",
+        "subheading": "",
+        "button_text": "Add a button",
+        "button_link": "",
+        "heading_font_size": 26,
+        "subheading_font_size": 16,
+        "text_color": "#000000",
+        "button_text_color": "#ffffff",
+        "button_color": "#000000",
+        "background": "rgba(0,0,0,0)",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "section_padding": "both"
+      }
+    },
+    "16527627771eb8b391": {
+      "type": "rich-text",
+      "settings": {
+        "heading": "Hi Everybody! Welcome to Fitness Goons.",
+        "rich_text": "<p>We are a family owned and operated small business. We all have a passion for leading an active lifestyle and encouraging others to do the same. We know in the fitness industry apparel and things can be expensive. Which is why we strive to provide quality products at an affordable price. We pride ourselves on excellent customer service and truly care about our Fitness Goons family. We are so glad you are here and hope you find what you're looking for! We are thankful for all the love and support from our customers. <\/p>",
+        "page": "",
+        "link": "",
+        "link_text": "",
+        "background": "#e5e5e5",
+        "color": "#000000",
+        "width": 60,
+        "section_padding": "both"
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "breadcrumbs",
+    "main",
+    "1652762458fa9c1e33",
+    "16527627771eb8b391"
+  ]
+}

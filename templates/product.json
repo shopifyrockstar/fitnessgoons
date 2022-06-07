@@ -1,0 +1,162 @@
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "896887d5-6a65-431c-9081-550cbc1a6676": {
+          "type": "product_variants",
+          "settings": {
+          }
+        },
+        "d9681722-e21d-42cb-b517-5a22bc70b2e5": {
+          "type": "product_quantity",
+          "settings": {
+          }
+        },
+        "569acd10-43ac-4854-adc8-bc64927b54bb": {
+          "type": "product_buttons",
+          "settings": {
+          }
+        },
+        "1af258e7-17dd-4fe5-bccb-351630d70821": {
+          "type": "product_description",
+          "settings": {
+          }
+        },
+        "ec330da2-623f-492b-97e6-ebb0396c1c58": {
+          "type": "tab_content",
+          "disabled": true,
+          "settings": {
+            "tab_title": "Care Guide",
+            "tab_text": "<p>{{ product.metafields.descriptors.care_guide.value }}<\/p>"
+          }
+        },
+        "99c90ebd-bddf-457b-993b-38360f657fd4": {
+          "type": "tab_content",
+          "disabled": true,
+          "settings": {
+            "tab_title": "Tab title",
+            "tab_text": "<p>Add text which will be shown in tabs across all product pages<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "896887d5-6a65-431c-9081-550cbc1a6676",
+        "d9681722-e21d-42cb-b517-5a22bc70b2e5",
+        "569acd10-43ac-4854-adc8-bc64927b54bb",
+        "1af258e7-17dd-4fe5-bccb-351630d70821",
+        "ec330da2-623f-492b-97e6-ebb0396c1c58",
+        "99c90ebd-bddf-457b-993b-38360f657fd4"
+      ],
+      "settings": {
+        "product_background": "",
+        "thumbnail_position": "bottom",
+        "click_to_enlarge": true,
+        "enable_video_looping": false
+      }
+    },
+    "product-content": {
+      "type": "main-product-content",
+      "disabled": true,
+      "blocks": {
+        "fb1f4d16-df0d-45b5-9465-721dc7a91c53": {
+          "type": "product_description",
+          "settings": {
+            "label": "Product details",
+            "block_width": "medium"
+          }
+        }
+      },
+      "block_order": [
+        "fb1f4d16-df0d-45b5-9465-721dc7a91c53"
+      ],
+      "settings": {
+        "color": "#000000",
+        "background": "#f9f9f9"
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "disabled": true,
+      "blocks": {
+        "e50b7e5d-2a3c-408a-a192-1d58f0030c33": {
+          "type": "product",
+          "disabled": true,
+          "settings": {
+            "product": ""
+          }
+        }
+      },
+      "block_order": [
+        "e50b7e5d-2a3c-408a-a192-1d58f0030c33"
+      ],
+      "settings": {
+        "title": "You might like",
+        "section_padding": "both"
+      }
+    },
+    "1625846216758d1de0": {
+      "type": "image-with-text",
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "section_padding": "both",
+        "layout": "right",
+        "image_width": "50%",
+        "text_align": "left",
+        "heading": "Image with text",
+        "text": "<p>Pair text with an image to add details about your products, brand and selling proposition.<\/p>",
+        "button": "",
+        "link": "",
+        "background": "#ffffff",
+        "color": "#000000"
+      }
+    },
+    "1625847223ea0ebb04": {
+      "type": "image-with-text-overlay",
+      "disabled": true,
+      "settings": {
+        "background_effect": "parallax",
+        "scale": 2,
+        "page_height": 500,
+        "caption_position": "middle_center",
+        "caption_below": false,
+        "heading": "Image with text overlay",
+        "subheading": "<p>Use overlay text to give your customers insight into your brand. Select imagery and text that relates to your style and story.<\/p>",
+        "button_text": "Add a button",
+        "button_link": "",
+        "heading_font_size": 26,
+        "subheading_font_size": 16,
+        "text_color": "#000000",
+        "button_text_color": "#ffffff",
+        "button_color": "#000000",
+        "background": "rgba(0,0,0,0)",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "section_padding": "both"
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "product_recommendations_heading": "Have you seen these",
+        "grid": 4,
+        "limit": 4
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "main",
+    "product-content",
+    "related-products",
+    "1625846216758d1de0",
+    "1625847223ea0ebb04",
+    "product-recommendations"
+  ]
+}
