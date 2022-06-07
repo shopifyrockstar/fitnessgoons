@@ -10634,7 +10634,7 @@ ul.linklist__section-links::-webkit-scrollbar {
    .template-page-return [data-section-type="contact-section"] form textarea{
      text-indent: 0;
      padding: 10px;
-     line-height: 30px;
+     line-height: 25px;
    }
    .template-page-return [data-section-type="contact-section"] form #contactFormWrapper .contact__form--inner-wrapper{
      width: 100%;
