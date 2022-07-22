@@ -828,7 +828,7 @@
             "type": "menu",
             "settings": {
               "footer_nav": "footer",
-              "heading": "Explore"
+              "heading": ""
             }
           },
           "1522183092230": {
@@ -836,7 +836,7 @@
             "disabled": true,
             "settings": {
               "footer_nav": "",
-              "heading": "Explore"
+              "heading": ""
             }
           },
           "1480973003673": {
@@ -850,10 +850,9 @@
           },
           "1480973024958": {
             "type": "text",
-            "disabled": true,
             "settings": {
-              "heading": "About",
-              "footer_text": "<p>Add some text to your footer.<\/p>"
+              "heading": "",
+              "footer_text": "<p>Fitness Goons<br\/>3021 S Woodruff<br\/>Mesa, AZ 85212<\/p>"
             }
           }
         },
@@ -974,6 +973,14 @@
     },
     "content_for_index": [
 
-    ]
+    ],
+    "blocks": {
+      "5843657705195325725": {
+        "type": "shopify:\/\/apps\/tikpix-tiktok-tracking-pixel\/blocks\/app-embed\/3414aae8-f7c8-4116-89b3-83ccf896b1f6",
+        "disabled": false,
+        "settings": {
+        }
+      }
+    }
   }
 }

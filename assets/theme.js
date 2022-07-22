@@ -7346,3 +7346,31 @@ log = function() {
 }
 
 log("Fashionopolism Version 8.0.1 by Underground", {bar: 1})();
+                                                                                                                                             
+$(window).load(function(){
+  $(".size-chart ul li.tmenu_item .tmenu_item_link").on('click', function(evt){
+    evt.preventDefault();
+    var clicked_item_link = $(this).attr("href");
+//     if ( clicked_item_link.indexOf('#men') !== -1 ){
+      console.log("clicked men item");
+      if ( $("body").hasClass("modal--open") ){
+      	$("body").removeClass("modal--open");
+        $("body").addClass("modal--closed");
+      }else{
+        $("body").addClass("modal--open");
+      }
+      $(".sizechart-quickview__container").addClass("active");
+      $( clicked_item_link ).addClass("active");
+//     }  
+//     if ( clicked_item_link.indexOf('#women') !== -1 ){
+//       console.log("clicked women item");
+//     }  
+  })
+  
+}) 
+
+$(".sizechart-quickview__container .js-modal-close").click(function(){
+//   $("body").removeClass("modal--open");
+  $(".sizechart-quickview__container").removeClass("active");
+  $(".sizechart-quickview__container .content-wrapper").removeClass("active");
+})
