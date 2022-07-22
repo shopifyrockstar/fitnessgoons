@@ -10658,4 +10658,84 @@ ul.linklist__section-links::-webkit-scrollbar {
        padding-left: 0px;
      }
    }
+
+
+   .sizechart-quickview__container{
+     display: none;
+     opacity: 0;
+     position: fixed;
+     z-index: 15;
+     left: 50%;
+     top: 50%;
+     transform: translate(-50%, -50%);
+     webkit-transition: opacity 1.2s ease-in-out;
+     transition: opacity 1.2s ease-in-out;
+   }
+   .sizechart-quickview__container.active{
+     display: block;
+     opacity: 1;
+   }
+   .sizechart-quickview__container-inner-wrapper {
+     max-height: 800px;
+     background-color: #b8b8b8;
+     padding: 30px;
+     border: 1px solid #888;
+   }
+   .sizechart-quickview__container-inner-wrapper #women{
+     display: none;
+     opacity: 0;
+   }
+   .sizechart-quickview__container-inner-wrapper #men{
+     display: none;
+     opacity: 0;
+   }
+   .sizechart-quickview__container-inner-wrapper #women.active, .sizechart-quickview__container-inner-wrapper #men.active{
+     display: flex;
+     opacity: 1;
+   }
+   .sizechart-quickview__container-inner-wrapper .content-wrapper:after{
+     content:'';
+     clear:both;
+     display:block;
+   }
+   .sizechart-quickview__container-inner-wrapper .content-wrapper{
+     align-items: center;
+     justify-content: center;
+     flex-wrap: wrap;
+   }
+   .sizechart-quickview__container-inner-wrapper .content-wrapper img{
+     width:50%;
+/*      float:left; */
+   }
    
+   
+   @media (max-width: 739px) {
+     .sizechart-quickview__container-inner-wrapper {
+       max-height: unset;
+       overflow-y: unset;
+     }
+   }
+   
+   @media (min-width: 980px) {
+     .sizechart-quickview__container-inner-wrapper {
+       width: 880px;
+     }
+   }
+   @media (min-width: 740px) and (max-width: 979px) {
+     .sizechart-quickview__container-inner-wrapper {
+       width: 90%;
+     }
+   }
+   @media (max-width: 739px) {
+     .sizechart-quickview__container-inner-wrapper {
+       width: 100%;
+     }
+     .sizechart-quickview__container-inner-wrapper {
+       max-height: unset;
+       padding: 50px 10px 20px 10px !important;
+     }
+   }
+   
+   .tmenu_item.size-chart{
+   	display:none !important;
+   }

@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="google-site-verification" content="BVijMS0cKFN-L75odvdB4BUx2yr2XOkQ3lXGEy592BA" />
 
   <!-- Establish early connection to external domains -->
   <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
@@ -121,6 +122,8 @@
       </div>
     </div>
   {%- endif -%}
+  
+  {% render 'size-modal' %}
 
   {% render 'cart-config' %}
   <script src="{{ 'eventemitter3.min.js' | asset_url }}"></script>
