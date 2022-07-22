@@ -7338,6 +7338,40 @@ document.addEventListener("DOMContentLoaded", function(){
   sections.register('contact-section', theme.ContactSection);
 });
 
+$('document').ready(function () {
+  $(document.body).on("mousedown", ".size-chart ul li.tmenu_item ul li a", function(evt){
+    evt.preventDefault();
+    var clicked_item_link = $(this).attr("href");
+    if ( window.innerwidth > 981 ){
+      if ( $("body").hasClass("modal--open") ){
+        $("body").removeClass("modal--open");
+        $("body").addClass("modal--closed");
+      }else{
+        $("body").addClass("modal--open");
+      }
+    }else{
+      if ( $("body").hasClass("slideout-left--open") ){
+        $("body").removeClass("slideout-left--open");
+        $("body").addClass("slideout-left--closed");
+        // $("body").removeClass("modal--open");
+        $("body").addClass("modal--open");
+      }else{
+        $("body").addClass("slideout-left--closed");
+        $("body").addClass("modal--open");
+      }
+    }
+    
+    $(".sizechart-quickview__container").addClass("active");
+    $( clicked_item_link ).addClass("active");
+  });
+});
+
+$(".sizechart-quickview__container .js-modal-close").click(function(){
+//   $("body").removeClass("modal--open");
+  $(".sizechart-quickview__container").removeClass("active");
+  $(".sizechart-quickview__container .content-wrapper").removeClass("active");
+})
+
 /* Log Theme Version */
 log = function() {
     var args = Array.prototype.slice.call(arguments);
@@ -7347,30 +7381,3 @@ log = function() {
 
 log("Fashionopolism Version 8.0.1 by Underground", {bar: 1})();
                                                                                                                                              
-$(window).load(function(){
-  $(".size-chart ul li.tmenu_item .tmenu_item_link").on('click', function(evt){
-    evt.preventDefault();
-    var clicked_item_link = $(this).attr("href");
-//     if ( clicked_item_link.indexOf('#men') !== -1 ){
-      console.log("clicked men item");
-      if ( $("body").hasClass("modal--open") ){
-      	$("body").removeClass("modal--open");
-        $("body").addClass("modal--closed");
-      }else{
-        $("body").addClass("modal--open");
-      }
-      $(".sizechart-quickview__container").addClass("active");
-      $( clicked_item_link ).addClass("active");
-//     }  
-//     if ( clicked_item_link.indexOf('#women') !== -1 ){
-//       console.log("clicked women item");
-//     }  
-  })
-  
-}) 
-
-$(".sizechart-quickview__container .js-modal-close").click(function(){
-//   $("body").removeClass("modal--open");
-  $(".sizechart-quickview__container").removeClass("active");
-  $(".sizechart-quickview__container .content-wrapper").removeClass("active");
-})
